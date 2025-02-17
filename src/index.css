@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply bg-gray-50 min-h-screen;
+    }
+    
+    header {
+        @apply bg-indigo-600 py-5 lg:py-10;
+    }
+
+    header div {
+        @apply container mx-auto flex flex-col justify-between items-center lg:flex-row;
+    }
+
+    header h1 {
+        @apply font-bold text-2xl text-center text-indigo-200;
+    }
+
+    header nav {
+        @apply mt-5 flex flex-col items-center gap-4 lg:mt-0 lg:flex-row;
+    }
+
+    footer {
+        @apply py-10;
+    }
+
+    footer p {
+        @apply text-center font-bold;
+    }
+}
+
+@layer components {
+    .mainAuth {
+        @apply container p-5 mt-10 mx-auto md:grid md:grid-cols-2 gap-12 items-center;
+    }
+
+    .titlePage {
+        @apply text-indigo-600 font-black text-6xl;
+    }
+
+    .divForm {
+        @apply px-5 py-10 mt-20 md:mt-5 shadow-lg rounded-xl bg-white;
+    }
+
+    .labelForm {
+        @apply uppercase text-gray-600 block text-xl font-bold;
+    }
+
+    .labelInput {
+        @apply border w-full p-3 mt-3 bg-gray-50 rounded-xl;
+    }
+
+    .labelSubmit {
+        @apply uppercase bg-indigo-700 w-full md:w-auto py-3 px-10 rounded-xl 
+        text-white font-bold mt-5 hover:cursor-pointer hover:bg-indigo-800;
+    }
+
+    .navMain {
+        @apply mt-10 lg:flex lg:justify-between;
+    }
+
+    .navLink {
+        @apply block text-center my-5 text-gray-500 hover:text-indigo-700;
+    }
+
+    .headerLink {
+        @apply text-white text-sm uppercase font-bold hover:text-indigo-200;
+    }
+
+    .pacienteForm {
+        @apply bg-white py-10 px-5 mb-10 shadow-md rounded-md lg:mb-0;
+    }
+
+    .pacienteLabel {
+        @apply text-gray-700 uppercase font-bold;
+    }
+
+    .pacienteInput {
+        @apply border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md;
+    }
+
+    .pacienteSubmit {
+        @apply bg-indigo-600 w-full p-3 text-white uppercase 
+        font-bold rounded-sm cursor-pointer transition-colors hover:bg-indigo-800;
+    }
+
+    .pacienteDiv {
+        @apply mx-5 my-10 px-5 py-10 bg-white shadow-md rounded-xl hover:shadow-indigo-400;
+    }
+
+    .pacienteInfo {
+        @apply my-2 font-bold uppercase text-indigo-800;
+    }
+
+    .pacienteInfo span {
+        @apply font-normal normal-case text-black;
+    }
+
+    .pacienteButton {
+        @apply py-2 px-10 uppercase font-bold rounded-lg text-white bg-indigo-600 hover:bg-indigo-700;
+    }
+
+    .pacienteButtonRed {
+        @apply pacienteButton bg-red-600 hover:bg-red-700;
+    }
+
+    .labelPerfil {
+        @apply uppercase font-bold text-gray-600;
+    }
+
+    .inputPerfil {
+        @apply border bg-gray-50 w-full p-2 mt-5 rounded-lg;
+    }
+
+    .btnPerfil {
+        @apply w-full mt-5 px-10 py-3 font-bold uppercase text-white bg-indigo-600 rounded-lg 
+        cursor-pointer hover:bg-indigo-700;
+    }
+}
