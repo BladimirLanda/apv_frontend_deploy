@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 import useAuth from "../hooks/useAuth"
 
-function Header() {
+const Header = () => {
     //Context
     const { cerrarSesión } = useAuth();
 
